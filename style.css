@@ -5,12 +5,12 @@
 }
 
 
-body{
-    background: url(bg.png) no-repeat center center;
+body {
+    background: url(bg.png) no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
-
+    min-height: 100vh;
 }
+
 .header{
     position: relative;
     text-decoration: none;
@@ -159,6 +159,156 @@ body{
     display: block;
 }
 
+/* =========================================
+   ESTILOS ADICIONAIS PARA O PROJETO 2 (SPA)
+   ========================================= */
+
+.github-app-section {
+    padding-bottom: 80px;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 40px 50px;
+    background: rgba(0, 31, 42, 0.9); /* Fundo escuro integrado à paleta do seu site */
+    border-radius: 15px;
+    color: white;
+}
+
+.app-container h2 {
+    color: #00ff86;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* Formulário de Busca */
+#search-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#search-input:focus {
+    border-color: #00ff86;
+}
+
+#search-form button {
+    background: #00ff86;
+    color: #001f2a;
+    border: none;
+    padding: 0 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search-form button:hover {
+    filter: brightness(0.85);
+}
+
+/* Mensagens de Validação */
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.95rem;
+    display: none;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.loading-msg {
+    color: #00ff86;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Grid de Resultados */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Estilização dos Cards da API */
+.repo-card {
+    background: #ffffff;
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.repo-card h3 {
+    color: #001f2a;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    word-break: break-all;
+}
+
+.repo-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #666;
+}
+
+.repo-stats i {
+    color: #001f2a;
+    margin-right: 5px;
+}
+
+/* Botões de Ação dentro do Card */
+.btn-fav {
+    background: #001f2a;
+    color: #00ff86;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-fav:hover {
+    background: #00ff86;
+    color: #001f2a;
+}
+
+.btn-remove {
+    background: #ff4d4d;
+    color: white;
+}
+
+.btn-remove:hover {
+    background: #cc0000;
+}
 @media (max-width: 1250px) {
     .container {
         flex-wrap: wrap;

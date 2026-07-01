@@ -8,59 +8,65 @@
     <title>BitFix</title>
 </head>
 <body>
-    
 
+    <header class="header">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="logo.png" alt="Logo BitFix"></a>
 
-        <header class="header">
+            <ul class="navegation">
+                <li><a href="index.html">Sobre nós</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li><a href="index.html">Serviços</a></li>
+                <li><a href="index.html">Fale Conosco</a></li>
+                <li><a href="index.html">Área do Cliente</a></li>
+            </ul>
+            
+            <ul class="medias">
+                <a href="index.html">
+                    <img src="instagram.png" alt="BitFix Instagram">
+                </a>
+                <a href="index.html">
+                    <img src="facebook.png" alt="BitFix Instagram">
+                </a>
+            </ul>
 
-            <div class="container">
-                <a class="logo" href="index.html"><img src="logo.png" alt="Logo BitFix"></a>
+            <span class="menu">☰</span>
+        </div>
+    </header>
 
-                <ul class="navegation">
-                    <li><a href="index.html">Sobre nós</a></li>
-                    <li><a href="index.html">Produtos</a></li>
-                    <li><a href="index.html">Serviços</a></li>
-                    <li><a href="index.html">Fale Conosco</a></li>
-                    <li><a href="index.html">Área do Cliente</a></li>
-                </ul>
+    <div class="info">
+        <div class="texto">
+            <h1><span class="subtitle">Suporte que</span><strong>resolve</strong><span class="dot"></span></h1>
+            <p>Suporte e soluções<br>em <strong>rede</strong>, <strong>hardware</strong><br>e <strong>software</strong></p>
+        </div>
+        <div class="imagem">
+            <img src="home.png" alt="Home">
+        </div>
+    </div>
 
-                
-                <ul class="medias">
-                    <a href="index.html">
-                        <img src="instagram.png" alt="BitFix Instagram">
-                    </a>
-
-                    <a href="index.html">
-                        <img src="facebook.png" alt="BitFix Instagram">
-                    </a>
-                </ul>
-
-                <span class="menu">☰</span>
-
-
-
-
-        </header>
-
-        <div class="info">
-            <div class="texto">
-
-                <h1><span class="subtitle">Suporte que</span><strong>resolve</strong><span class="dot"></span></h1>
-                <p>Suporte e soluções<br>em <strong>rede</strong>, <strong>hardware</strong><br>e <strong>software</strong></p>
-
-               </div>
-
-            <div class="imagem">
-
-                <img src="home.png" alt="Home">
-
-            </div>
-
+    <main class="github-app-section">
+        <div class="app-container">
+            <h2>Buscar Repositórios no GitHub</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Digite uma linguagem ou tema (ex: javascript)...">
+                <button type="submit">Buscar</button>
+            </form>
+            <p id="error-msg" class="error-msg">Por favor, digite pelo menos 3 caracteres.</p>
+            <p id="loading-msg" class="loading-msg" style="display: none;">Buscando dados...</p>
+            
+            <div id="search-results" class="results-grid"></div>
         </div>
 
-        <a href="#" class="whatsapp-float" aria-label="WhatsApp">
-            <img src="whatsapp.svg" alt="WhatsApp">
-        </a>
-    
+        <div class="app-container">
+            <h2>Meus Repositórios Favoritos</h2>
+            <div id="favorites-results" class="results-grid"></div>
+        </div>
+    </main>
+
+    <a href="#" class="whatsapp-float" aria-label="WhatsApp">
+        <img src="whatsapp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
